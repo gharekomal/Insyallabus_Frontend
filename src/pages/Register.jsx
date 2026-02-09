@@ -75,7 +75,7 @@ const Register = () => {
         </Form>
 
         <p className="text-center mt-3">
-          Already have an account? <Link to="/login">Login</Link>
+          Already have an account? <Link to="/">Login</Link>
         </p>
       </Card>
     </Container>
