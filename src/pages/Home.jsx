@@ -16,7 +16,7 @@ const HomePage = () => {
 
   return (
     <Container fluid className="p-0">
-      
+
       <Row
         className="border-bottom align-items-center"
         style={{ height: "60px" }}
@@ -31,7 +31,7 @@ const HomePage = () => {
         </Col>
       </Row>
 
-      
+
       <div className="sidebar d-flex flex-column">
         <div className="sidebar-item">
           <Home />
@@ -56,9 +56,9 @@ const HomePage = () => {
         {/* <div className="sidebar-item">
           <ShoppingCart />
           <span className="sidebar-text">Cart</span>
-        </div> */}
+        </div>
 
-        {/* <div className="sidebar-item">
+        <div className="sidebar-item">
           <User />
           <span className="sidebar-text">My Space</span>
         </div> */}
@@ -75,7 +75,7 @@ const HomePage = () => {
         </div>
       </div>
 
-     
+
       <div style={{ padding: "20px", marginTop: "60px" }}>
         <h5></h5>
         <p></p>
