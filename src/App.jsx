@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { ToastContainer } from "react-toastify";
 import { Spinner, Container } from "react-bootstrap";
+import HomePage from "./pages/Home";
 
-// Lazy-loaded components
+
+
 const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
-
 
 const Loader = () => (
   <Container className="d-flex justify-content-center align-items-center vh-100">
@@ -21,9 +22,13 @@ function App() {
 
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          
+          <Route path="/home" element={<HomePage   />} />
+
+
+
+
         </Routes>
       </Suspense>
     </Router>

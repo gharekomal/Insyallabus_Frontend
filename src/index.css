@@ -1,0 +1,55 @@
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 60px; /* below logo bar */
+  left: 0;
+  height: calc(100vh - 60px);
+  width: 60px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* EXPAND ON HOVER */
+.sidebar:hover {
+  width: 200px;
+}
+
+/* SIDEBAR ITEM */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ICON FIX */
+.sidebar-item svg {
+  min-width: 24px;
+}
+
+/* TEXT HIDDEN BY DEFAULT */
+.sidebar-text {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* SHOW TEXT ON HOVER */
+.sidebar:hover .sidebar-text {
+  opacity: 1;
+}
+
+/* HOVER EFFECT */
+.sidebar-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* LOGIN BUTTON */
+.sidebar-login {
+  margin-top: auto;
+  padding: 15px;
+}
