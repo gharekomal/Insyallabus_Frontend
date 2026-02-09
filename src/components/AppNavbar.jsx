@@ -20,7 +20,7 @@ const AppNavbar = () => {
 
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
-          {/* LEFT LINKS */}
+          
           <Nav className="me-auto">
             <Nav.Link
               as={Link}
@@ -32,7 +32,7 @@ const AppNavbar = () => {
             </Nav.Link>
           </Nav>
 
-          {/* RIGHT BUTTONS */}
+         
           <div className="d-flex gap-2">
             <Button
               variant="outline-primary"
